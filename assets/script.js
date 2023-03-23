@@ -9,7 +9,7 @@ function charactersLength(){
       length = 8;
       return length;
     }
-    if (length > 8 && length < 128){
+    if (length > 8 && length < 128 && !isNaN(length)){
       return length;
     }
     else{
