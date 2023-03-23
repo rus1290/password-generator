@@ -24,10 +24,21 @@ function generatePassword() {
   var charSet = "";
   var charTypeLower = charType.toLowerCase();
   if (charTypeLower === "lowercase") {
-    charSet = "abcdefghijklmnopqrstuvwxyz"
+    charSet = "abcdefghijklmnopqrstuvwxyz";
+  } else if (characterTypeLower === "uppercase") {
+    charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  } else if (characterTypeLower === "numeric") {
+    charSet = "0123456789";
+  } else if (charSet === "special") {
+    charSet = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   } 
-  // 4. Generate the password based on the criteria
- 
+  // 4. Generate the password based on the data provided
+
+  var retVal = "";
+  for (var i = 0; i < length; i++) {
+    
+  }
+  
 
 
 
