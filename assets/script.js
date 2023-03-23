@@ -34,10 +34,11 @@ function generatePassword() {
   } 
   // 4. Generate the password based on the data provided
 
-  var retVal = "";
+  var genPass = "";
   for (var i = 0; i < length; i++) {
-    
+    genPass += charSet.charAt(Math.fool(Math.random() * charSet.length));
   }
+  return genPass;
   
 
 
